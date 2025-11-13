@@ -1,0 +1,109 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+/* Background + center alignment */
+.app-container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(237, 208, 180);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Side-by-side layout */
+.content-box {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+/* Left box: form */
+.form-box {
+  flex: 1;
+  min-width: 300px;
+  max-width: 380px;
+  background: #77a8e8;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.form-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-box button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  width: 60%;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Right box: table */
+.table-box {
+  flex: 2;
+  min-width: 450px;
+  background: #77a8e8;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+.table-box table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.table-box thead {
+  background-color: #77a8e8;
+}
+
+.table-box th,
+.table-box td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+.edit-btn {
+  background: #7bdcb5;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #ff6b6b;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
